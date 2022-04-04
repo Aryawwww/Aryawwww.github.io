@@ -182,10 +182,15 @@
             </div>
         </div>
         <div class="col-md-8 col-md-offset-2">
-      		<h1 id="关于优化-CGF-的笔记"><a href="#关于优化-CGF-的笔记" class="headerlink" title="关于优化[^CGF]的笔记"></a>关于优化[^CGF]的笔记</h1><h2 id="主要方向是使得字节和种子不被重复改变和模糊"><a href="#主要方向是使得字节和种子不被重复改变和模糊" class="headerlink" title="主要方向是使得字节和种子不被重复改变和模糊"></a>主要方向是使得字节和种子不被重复改变和模糊</h2><p>##目前的两个学习方向：<br>###一、AFLFast<br><a target="_blank" rel="noopener" href="https://www.cnpanda.net/sci/238.html">Coverage-based greybox fuzzing as markov chain</a><br>####策略<br>主要是通过选择种子时。考虑种子之前被fuzz的次数、相同路径的数量。<em><strong>低频路径</strong></em>拥有更高的优先级。</p>
+      		<h1 id="关于优化CGF的笔记"><a href="#关于优化CGF的笔记" class="headerlink" title="关于优化CGF的笔记"></a>关于优化CGF的笔记</h1><hr>
+<p>Coverage-guided(based Greybox Fuzzing</p>
+<p>主要方向是使得字节和种子不被重复改变和模糊<br>目前的两个方向：</p>
+<hr>
+<p>###一、AFLFast<br><a target="_blank" rel="noopener" href="https://www.cnpanda.net/sci/238.html">Coverage-based greybox fuzzing as markov chain</a><br>####策略<br>主要是通过选择种子时。考虑种子之前被fuzz的次数、相同路径的数量。<em><strong>低频路径</strong></em>拥有更高的优先级。</p>
+<span id="more"></span>
 <p>种子输入的能量时路径测试用例个数的倒数</p>
 <p>####主要改动（对比于AFL）</p>
-<p>###二、TRUZZ<br>[^CGF]:Coverage-guided(based Greybox Fuzzing</p>
+<p>###二、TRUZZ</p>
 
             <div class="clearfix"></div>
             <hr class="nogutter">
